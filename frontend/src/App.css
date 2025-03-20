@@ -1,0 +1,26 @@
+.nagy-div{
+
+  width: 900px;
+  height: 800px;
+
+}
+
+
+
+.elso-div{
+  background-color: lightgreen;
+  width: 400px;
+  height: 600px;
+}
+
+.masodik-div{
+  background-color: white;
+  width: 400px;
+  height: 600px;
+}
+
+.harmadik-div{
+  background-color: lightgreen;
+  width: 400px;
+  height: 600px;
+}

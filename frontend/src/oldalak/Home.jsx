@@ -1,32 +1,52 @@
 import { useState } from 'react'
-
-
+import elso from '/img/elso.jpg'
+import logo from '/img/logo.png'
 function Home() {
   
 
   return (
     <>
-     <div>
+     <div class="nagy-div">
         <h1>Home.jsx </h1>
 
-        <div>
+        <div class="elso-div">
             <h1>Központi Felvételi Tájékoztató</h1>
             <p></p>
-            <h2>Tájékoztatói oldal</h2>
-            <img src="" alt="" sizes="" srcset="" />
+           <a href="https://www.oktatas.hu/"><h2>Tájékoztatói oldal</h2></a> 
+            <img class="logo" src={logo} alt="" sizes="100%" srcset="" />
         </div>
 
-        <div>
+        <div class="masodik-div">
             <h1>Tájékoztatás</h1>
             <h2>Jószakma Szakgimnázium</h2>
             <p></p>
             <h2>Tájékoztatói oldal</h2>
-            <img src="" alt="" sizes="" srcset="" />
+            <img class="elso" src={elso} alt="" sizes="100%" srcset="" />
         </div>
 
-
-        
+        <div class="harmadik-div">
+            <h1>Az oldal használatáról</h1>
+            <h2>Jószakma Szakgimnázium</h2>
+            <p></p>
+            <h2>Tájékoztatói oldal</h2>
+            <img src="" alt="" sizes="" srcset="" />
+        </div>       
      </div>
+
+
+    <h2>Felvételt nyert tanulók névsora a nyelvi előkészítőre</h2>
+
+    <p>Válassza ki </p>
+
+    <div class="custom-select" style="width:200px;">
+  <select>
+    <option value="0">szakma neve</option>
+    <option value="1">szakma neve</option>
+    <option value="2">szakma neve</option>
+    </select>
+    </div>
+
+
         
     </>
   )
