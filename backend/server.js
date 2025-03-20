@@ -15,6 +15,20 @@ const db = mysql.createConnection({
 
 /*lekerdezeshelye*/
 
+
+app.get('tagozatok', (req, res) => {
+    const sqlParancsok = "Select * FROM tagozatok ";
+    db.query(sqlParancsok, (err, result)=> {
+        if(err){
+            res.json(err);
+        }
+        res.json(result);  
+    })
+})
+
+
+
+
 app.listen(3001, ()=>{
     console.log('Megy a server a 3001 porton')
 })

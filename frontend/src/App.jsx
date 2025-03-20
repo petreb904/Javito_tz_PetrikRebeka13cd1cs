@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Navbar from './Navbar'
 import Home from './oldalak/Home'
-import Valasztott from './oldalak/Valasztott'
+import Felvettek from './oldalak/Felvettek'
 import './App.css'
 
 
@@ -15,7 +15,7 @@ function App() {
        <Navbar/>
        <Routes>
           <Route index element= {<Home/>}/>
-          <Route path='Valasztott' element= {<Valasztott/>}/>       
+          <Route path='Felvettek' element= {<Felvettek/>}/>       
         </Routes>
       </BrowserRouter>
     </>
